@@ -1,0 +1,11 @@
+framework module HXSDK {
+  umbrella header "HXSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module HXSDK.Swift {
+  header "HXSDK.h"
+  requires objc
+}
