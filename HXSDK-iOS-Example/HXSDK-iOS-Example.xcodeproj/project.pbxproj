@@ -10,6 +10,9 @@
 		18AC03F4FB0D4C74C3B61F58 /* Pods_HXSDK_iOS_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2B4848190568515B5921D3 /* Pods_HXSDK_iOS_ExampleTests.framework */; };
 		6F283806FC6B33C14EF6BCD2 /* Pods_HXSDK_iOS_Example_HXSDK_iOS_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87393D25D572646B882D2D1 /* Pods_HXSDK_iOS_Example_HXSDK_iOS_ExampleUITests.framework */; };
 		775286086ED706CF205D3F92 /* Pods_HXSDK_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F038332EB18D22B36B9568A6 /* Pods_HXSDK_iOS_Example.framework */; };
+		E4737A8E2D9A37A300B4F7B0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E4737A8B2D9A37A300B4F7B0 /* README.md */; };
+		E4737A8F2D9A37A300B4F7B0 /* HXSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E4737A8A2D9A37A300B4F7B0 /* HXSDK.podspec */; };
+		E4737A902D9A37A300B4F7B0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E4737A8C2D9A37A300B4F7B0 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		A3FF979A325CBF538DC2E11C /* Pods-HXSDK-iOS-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXSDK-iOS-ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-HXSDK-iOS-ExampleTests/Pods-HXSDK-iOS-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B66ADF9CC510E9AAE3D01E6B /* Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C87393D25D572646B882D2D1 /* Pods_HXSDK_iOS_Example_HXSDK_iOS_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HXSDK_iOS_Example_HXSDK_iOS_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4737A8A2D9A37A300B4F7B0 /* HXSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = HXSDK.podspec; path = ../HXSDK.podspec; sourceTree = "<group>"; };
+		E4737A8B2D9A37A300B4F7B0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E4737A8C2D9A37A300B4F7B0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E48C3ECE2D99784A00557E1A /* HXSDK-iOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HXSDK-iOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48C3EE42D99784B00557E1A /* HXSDK-iOS-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HXSDK-iOS-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48C3EEE2D99784B00557E1A /* HXSDK-iOS-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HXSDK-iOS-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,9 +132,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E4737A8D2D9A37A300B4F7B0 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				E4737A8A2D9A37A300B4F7B0 /* HXSDK.podspec */,
+				E4737A8B2D9A37A300B4F7B0 /* README.md */,
+				E4737A8C2D9A37A300B4F7B0 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
 		E48C3EC52D99784A00557E1A = {
 			isa = PBXGroup;
 			children = (
+				E4737A8D2D9A37A300B4F7B0 /* Podspec Metadata */,
 				E48C3ED02D99784A00557E1A /* HXSDK-iOS-Example */,
 				E48C3EE72D99784B00557E1A /* HXSDK-iOS-ExampleTests */,
 				E48C3EF12D99784B00557E1A /* HXSDK-iOS-ExampleUITests */,
@@ -265,6 +282,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4737A8E2D9A37A300B4F7B0 /* README.md in Resources */,
+				E4737A8F2D9A37A300B4F7B0 /* HXSDK.podspec in Resources */,
+				E4737A902D9A37A300B4F7B0 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
