@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.module_name = 'HXSDK'
   s.static_framework = true
   s.ios.deployment_target = '9.0'
-  s.ios.vendored_frameworks = 'HXSDK.framework'
+  s.ios.vendored_frameworks = 'HXSDK/Frameworks/HXSDK.framework'
   s.dependency 'UBiXMerakSDK', '~> 2.5.1'
 
   s.pod_target_xcconfig = { 'SWIFT_OBJC_INTERFACE_HEADER_NAME' => "$(SWIFT_MODULE_NAME).h", 'ENABLE_BITCODE' => 'NO', 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 arm64' }
