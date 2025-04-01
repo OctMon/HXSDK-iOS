@@ -18,22 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="47h-kB-tAy">
-                                <rect key="frame" x="90.000000000000014" y="99" width="213.33333333333337" height="68.666666666666686"/>
+                                <rect key="frame" x="121.66666666666669" y="99" width="150" height="34.333333333333343"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-LD-7TX">
-                                        <rect key="frame" x="0.0" y="0.0" width="213.33333333333334" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="HXSDK开屏广告"/>
                                         <connections>
                                             <action selector="sdkSplashAd" destination="BYZ-38-t0r" eventType="touchUpInside" id="SqJ-to-pgf"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBd-v1-uct" userLabel="Adapter开屏广告">
-                                        <rect key="frame" x="0.0" y="34.333333333333343" width="213.33333333333334" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="HXTakuAdapter开屏广告"/>
-                                        <connections>
-                                            <action selector="takuAdapterSplashAd" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nnj-sW-UEL"/>
                                         </connections>
                                     </button>
                                 </subviews>
