@@ -21,3 +21,8 @@ target 'HXSDK-iOS-Example' do
   end
 
 end
+
+target 'HXSDK-OC-Example' do
+  use_frameworks!
+  pod 'HXSDK/LY', :path => '../'
+end

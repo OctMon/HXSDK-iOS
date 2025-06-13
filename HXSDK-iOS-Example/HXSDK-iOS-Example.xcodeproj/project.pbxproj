@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C7702D969488D28E502F65A /* Pods_HXSDK_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D13B5405733BD347790913 /* Pods_HXSDK_iOS_Example.framework */; };
+		574ADB018209BB4801808D55 /* Pods_HXSDK_OC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E91986E10ED39D63EA53C6 /* Pods_HXSDK_OC_Example.framework */; };
 		5BB0BA3E85B8C3F1F7C65F02 /* Pods_HXSDK_iOS_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA25712A9D57B055FCAD4170 /* Pods_HXSDK_iOS_ExampleTests.framework */; };
 		E4737A8E2D9A37A300B4F7B0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E4737A8B2D9A37A300B4F7B0 /* README.md */; };
 		E4737A8F2D9A37A300B4F7B0 /* HXSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E4737A8A2D9A37A300B4F7B0 /* HXSDK.podspec */; };
@@ -16,6 +17,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E41EA5092DFC787900923562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E48C3EC62D99784A00557E1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41EA4ED2DFC787800923562;
+			remoteInfo = "HXSDK-OC-Example";
+		};
+		E41EA5132DFC787900923562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E48C3EC62D99784A00557E1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41EA4ED2DFC787800923562;
+			remoteInfo = "HXSDK-OC-Example";
+		};
 		E48C3EE52D99784B00557E1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E48C3EC62D99784A00557E1A /* Project object */;
@@ -33,14 +48,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		174BEC0AE87BEB786928B04D /* Pods-HXSDK-OC-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXSDK-OC-Example.debug.xcconfig"; path = "Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		32F77B89FCD145CD6A2CCCFD /* Pods-HXSDK-iOS-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXSDK-iOS-Example.debug.xcconfig"; path = "Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		33E91986E10ED39D63EA53C6 /* Pods_HXSDK_OC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HXSDK_OC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		462B21562A63EAE51757CACA /* Pods-HXSDK-iOS-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXSDK-iOS-ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-HXSDK-iOS-ExampleTests/Pods-HXSDK-iOS-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		694B28670E01C3955AB5FF22 /* Pods-HXSDK-iOS-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXSDK-iOS-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-HXSDK-iOS-ExampleTests/Pods-HXSDK-iOS-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CFAFB36473AEA085A1C401D /* Pods-HXSDK-iOS-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXSDK-iOS-Example.release.xcconfig"; path = "Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example.release.xcconfig"; sourceTree = "<group>"; };
+		A19DF006DCB51AC23F7915AD /* Pods-HXSDK-OC-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXSDK-OC-Example.release.xcconfig"; path = "Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example.release.xcconfig"; sourceTree = "<group>"; };
 		A72C4476D95388E3FB93E98E /* Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABFDFCD410758F070DE1AE2C /* Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C9D13B5405733BD347790913 /* Pods_HXSDK_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HXSDK_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA25712A9D57B055FCAD4170 /* Pods_HXSDK_iOS_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HXSDK_iOS_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41EA4EE2DFC787800923562 /* HXSDK-OC-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HXSDK-OC-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41EA5082DFC787900923562 /* HXSDK-OC-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HXSDK-OC-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41EA5122DFC787900923562 /* HXSDK-OC-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HXSDK-OC-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4737A8A2D9A37A300B4F7B0 /* HXSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = HXSDK.podspec; path = ../HXSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E4737A8B2D9A37A300B4F7B0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E4737A8C2D9A37A300B4F7B0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -51,6 +72,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E41EA5202DFC787900923562 /* Exceptions for "HXSDK-OC-Example" folder in "HXSDK-OC-Example" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E41EA4ED2DFC787800923562 /* HXSDK-OC-Example */;
+		};
 		E48C3EF62D99784B00557E1A /* Exceptions for "HXSDK-iOS-Example" folder in "HXSDK-iOS-Example" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -61,6 +89,24 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		E41EA4EF2DFC787800923562 /* HXSDK-OC-Example */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E41EA5202DFC787900923562 /* Exceptions for "HXSDK-OC-Example" folder in "HXSDK-OC-Example" target */,
+			);
+			path = "HXSDK-OC-Example";
+			sourceTree = "<group>";
+		};
+		E41EA50B2DFC787900923562 /* HXSDK-OC-ExampleTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "HXSDK-OC-ExampleTests";
+			sourceTree = "<group>";
+		};
+		E41EA5152DFC787900923562 /* HXSDK-OC-ExampleUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "HXSDK-OC-ExampleUITests";
+			sourceTree = "<group>";
+		};
 		E48C3ED02D99784A00557E1A /* HXSDK-iOS-Example */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -71,21 +117,39 @@
 		};
 		E48C3EE72D99784B00557E1A /* HXSDK-iOS-ExampleTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "HXSDK-iOS-ExampleTests";
 			sourceTree = "<group>";
 		};
 		E48C3EF12D99784B00557E1A /* HXSDK-iOS-ExampleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "HXSDK-iOS-ExampleUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E41EA4EB2DFC787800923562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574ADB018209BB4801808D55 /* Pods_HXSDK_OC_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41EA5052DFC787900923562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41EA50F2DFC787900923562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E48C3ECB2D99784A00557E1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,6 +183,7 @@
 				C9D13B5405733BD347790913 /* Pods_HXSDK_iOS_Example.framework */,
 				F00C7CC3153B142EA350E6EC /* Pods_HXSDK_iOS_Example_HXSDK_iOS_ExampleUITests.framework */,
 				DA25712A9D57B055FCAD4170 /* Pods_HXSDK_iOS_ExampleTests.framework */,
+				33E91986E10ED39D63EA53C6 /* Pods_HXSDK_OC_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +197,8 @@
 				ABFDFCD410758F070DE1AE2C /* Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests.release.xcconfig */,
 				462B21562A63EAE51757CACA /* Pods-HXSDK-iOS-ExampleTests.debug.xcconfig */,
 				694B28670E01C3955AB5FF22 /* Pods-HXSDK-iOS-ExampleTests.release.xcconfig */,
+				174BEC0AE87BEB786928B04D /* Pods-HXSDK-OC-Example.debug.xcconfig */,
+				A19DF006DCB51AC23F7915AD /* Pods-HXSDK-OC-Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -153,6 +220,9 @@
 				E48C3ED02D99784A00557E1A /* HXSDK-iOS-Example */,
 				E48C3EE72D99784B00557E1A /* HXSDK-iOS-ExampleTests */,
 				E48C3EF12D99784B00557E1A /* HXSDK-iOS-ExampleUITests */,
+				E41EA4EF2DFC787800923562 /* HXSDK-OC-Example */,
+				E41EA50B2DFC787900923562 /* HXSDK-OC-ExampleTests */,
+				E41EA5152DFC787900923562 /* HXSDK-OC-ExampleUITests */,
 				E48C3ECF2D99784A00557E1A /* Products */,
 				E1C2CCAD982633ACD1964797 /* Pods */,
 				35A5DCBEC3BF11C72D231651 /* Frameworks */,
@@ -165,6 +235,9 @@
 				E48C3ECE2D99784A00557E1A /* HXSDK-iOS-Example.app */,
 				E48C3EE42D99784B00557E1A /* HXSDK-iOS-ExampleTests.xctest */,
 				E48C3EEE2D99784B00557E1A /* HXSDK-iOS-ExampleUITests.xctest */,
+				E41EA4EE2DFC787800923562 /* HXSDK-OC-Example.app */,
+				E41EA5082DFC787900923562 /* HXSDK-OC-ExampleTests.xctest */,
+				E41EA5122DFC787900923562 /* HXSDK-OC-ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +245,70 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E41EA4ED2DFC787800923562 /* HXSDK-OC-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41EA5212DFC787900923562 /* Build configuration list for PBXNativeTarget "HXSDK-OC-Example" */;
+			buildPhases = (
+				AFF97EF52428D0CD2F559CCA /* [CP] Check Pods Manifest.lock */,
+				E41EA4EA2DFC787800923562 /* Sources */,
+				E41EA4EB2DFC787800923562 /* Frameworks */,
+				E41EA4EC2DFC787800923562 /* Resources */,
+				90DB6B05406D171E0A0A745F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E41EA4EF2DFC787800923562 /* HXSDK-OC-Example */,
+			);
+			name = "HXSDK-OC-Example";
+			productName = "HXSDK-OC-Example";
+			productReference = E41EA4EE2DFC787800923562 /* HXSDK-OC-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E41EA5072DFC787900923562 /* HXSDK-OC-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41EA5222DFC787900923562 /* Build configuration list for PBXNativeTarget "HXSDK-OC-ExampleTests" */;
+			buildPhases = (
+				E41EA5042DFC787900923562 /* Sources */,
+				E41EA5052DFC787900923562 /* Frameworks */,
+				E41EA5062DFC787900923562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41EA50A2DFC787900923562 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E41EA50B2DFC787900923562 /* HXSDK-OC-ExampleTests */,
+			);
+			name = "HXSDK-OC-ExampleTests";
+			productName = "HXSDK-OC-ExampleTests";
+			productReference = E41EA5082DFC787900923562 /* HXSDK-OC-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E41EA5112DFC787900923562 /* HXSDK-OC-ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41EA5232DFC787900923562 /* Build configuration list for PBXNativeTarget "HXSDK-OC-ExampleUITests" */;
+			buildPhases = (
+				E41EA50E2DFC787900923562 /* Sources */,
+				E41EA50F2DFC787900923562 /* Frameworks */,
+				E41EA5102DFC787900923562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41EA5142DFC787900923562 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E41EA5152DFC787900923562 /* HXSDK-OC-ExampleUITests */,
+			);
+			name = "HXSDK-OC-ExampleUITests";
+			productName = "HXSDK-OC-ExampleUITests";
+			productReference = E41EA5122DFC787900923562 /* HXSDK-OC-ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E48C3ECD2D99784A00557E1A /* HXSDK-iOS-Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E48C3EF72D99784B00557E1A /* Build configuration list for PBXNativeTarget "HXSDK-iOS-Example" */;
@@ -249,6 +386,17 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					E41EA4ED2DFC787800923562 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					E41EA5072DFC787900923562 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = E41EA4ED2DFC787800923562;
+					};
+					E41EA5112DFC787900923562 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = E41EA4ED2DFC787800923562;
+					};
 					E48C3ECD2D99784A00557E1A = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -279,11 +427,35 @@
 				E48C3ECD2D99784A00557E1A /* HXSDK-iOS-Example */,
 				E48C3EE32D99784B00557E1A /* HXSDK-iOS-ExampleTests */,
 				E48C3EED2D99784B00557E1A /* HXSDK-iOS-ExampleUITests */,
+				E41EA4ED2DFC787800923562 /* HXSDK-OC-Example */,
+				E41EA5072DFC787900923562 /* HXSDK-OC-ExampleTests */,
+				E41EA5112DFC787900923562 /* HXSDK-OC-ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E41EA4EC2DFC787800923562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41EA5062DFC787900923562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41EA5102DFC787900923562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E48C3ECC2D99784A00557E1A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,9 +583,69 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		90DB6B05406D171E0A0A745F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF97EF52428D0CD2F559CCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HXSDK-OC-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E41EA4EA2DFC787800923562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41EA5042DFC787900923562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41EA50E2DFC787900923562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E48C3ECA2D99784A00557E1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,6 +670,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E41EA50A2DFC787900923562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E41EA4ED2DFC787800923562 /* HXSDK-OC-Example */;
+			targetProxy = E41EA5092DFC787900923562 /* PBXContainerItemProxy */;
+		};
+		E41EA5142DFC787900923562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E41EA4ED2DFC787800923562 /* HXSDK-OC-Example */;
+			targetProxy = E41EA5132DFC787900923562 /* PBXContainerItemProxy */;
+		};
 		E48C3EE62D99784B00557E1A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E48C3ECD2D99784A00557E1A /* HXSDK-iOS-Example */;
@@ -451,6 +693,128 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E41EA51A2DFC787900923562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174BEC0AE87BEB786928B04D /* Pods-HXSDK-OC-Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HHTRN5N5L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HXSDK-OC-Example/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hxad.sdk.HXSDK-OC-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E41EA51B2DFC787900923562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A19DF006DCB51AC23F7915AD /* Pods-HXSDK-OC-Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HHTRN5N5L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HXSDK-OC-Example/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hxad.sdk.HXSDK-OC-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E41EA51C2DFC787900923562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hxad.sdk.HXSDK-OC-Example.HXSDK-OC-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HXSDK-OC-Example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HXSDK-OC-Example";
+			};
+			name = Debug;
+		};
+		E41EA51D2DFC787900923562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hxad.sdk.HXSDK-OC-Example.HXSDK-OC-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HXSDK-OC-Example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HXSDK-OC-Example";
+			};
+			name = Release;
+		};
+		E41EA51E2DFC787900923562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hxad.sdk.HXSDK-OC-Example.HXSDK-OC-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HXSDK-OC-Example";
+			};
+			name = Debug;
+		};
+		E41EA51F2DFC787900923562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hxad.sdk.HXSDK-OC-Example.HXSDK-OC-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HXSDK-OC-Example";
+			};
+			name = Release;
+		};
 		E48C3EF82D99784B00557E1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32F77B89FCD145CD6A2CCCFD /* Pods-HXSDK-iOS-Example.debug.xcconfig */;
@@ -707,6 +1071,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E41EA5212DFC787900923562 /* Build configuration list for PBXNativeTarget "HXSDK-OC-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41EA51A2DFC787900923562 /* Debug */,
+				E41EA51B2DFC787900923562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E41EA5222DFC787900923562 /* Build configuration list for PBXNativeTarget "HXSDK-OC-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41EA51C2DFC787900923562 /* Debug */,
+				E41EA51D2DFC787900923562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E41EA5232DFC787900923562 /* Build configuration list for PBXNativeTarget "HXSDK-OC-ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41EA51E2DFC787900923562 /* Debug */,
+				E41EA51F2DFC787900923562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E48C3EC92D99784A00557E1A /* Build configuration list for PBXProject "HXSDK-iOS-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
