@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HXSDK'
-  s.version          = '2.0.1'
+  s.version          = '3.1.2'
   s.summary          = 'HXSDK for iOS.'
 
   s.homepage         = 'https://github.com/OctMon/HXSDK-iOS'
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = {
-      'VALID_ARCHS' =>  valid_archs.join(' '),
+      'VALID_ARCHS' => valid_archs.join(' '),
   }
     
 end

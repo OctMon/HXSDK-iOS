@@ -1,6 +1,6 @@
 PODS:
-  - HXSDK/Core (2.0.1)
-  - HXSDK/LY (2.0.1):
+  - HXSDK/Core (3.1.2)
+  - HXSDK/LY (3.1.2):
     - HXSDK/Core
     - PTGAdFramework (~> 2.2.75)
   - PTGAdFramework (2.2.75)
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HXSDK: fe72c0dcc6e0379e80fdf5334f306bcfb6e9b686
+  HXSDK: ed021bd3cc14e8e24f4a301ac03c4db4ac2f598c
   PTGAdFramework: dc5e40c372f2a736a382324620258e09a07bde74
 
 PODFILE CHECKSUM: f0fdae2779509df725485c8be2888c4929284f74
