@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     ss.ios.vendored_frameworks = 'HXSDK/Frameworks/HXSDK.framework'
   end
 
-  s.subspec 'PTGAd' do |ss|
+  s.subspec 'LY' do |ss|
     ss.dependency 'HXSDK/Core'
     ss.dependency 'PTGAdFramework', '~> 2.2.75'
   end
@@ -27,4 +27,5 @@ Pod::Spec.new do |s|
   s.xcconfig = {
       'VALID_ARCHS' =>  valid_archs.join(' '),
   }
+    
 end
