@@ -9,7 +9,7 @@ target 'HXSDK-iOS-Example' do
 
   # Pods for HXSDK-iOS-Example
 #  pod 'HXSDK', :path => '../'
-  pod 'HXSDK/PTGAd', :path => '../'
+  pod 'HXSDK/LY', :path => '../'
 
   target 'HXSDK-iOS-ExampleTests' do
     inherit! :search_paths

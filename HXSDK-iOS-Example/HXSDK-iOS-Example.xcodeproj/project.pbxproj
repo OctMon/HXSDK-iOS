@@ -71,11 +71,15 @@
 		};
 		E48C3EE72D99784B00557E1A /* HXSDK-iOS-ExampleTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "HXSDK-iOS-ExampleTests";
 			sourceTree = "<group>";
 		};
 		E48C3EF12D99784B00557E1A /* HXSDK-iOS-ExampleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "HXSDK-iOS-ExampleUITests";
 			sourceTree = "<group>";
 		};
@@ -176,7 +180,7 @@
 				E48C3ECA2D99784A00557E1A /* Sources */,
 				E48C3ECB2D99784A00557E1A /* Frameworks */,
 				E48C3ECC2D99784A00557E1A /* Resources */,
-				1979A6D51AE5DE3F513D67C7 /* [CP] Copy Pods Resources */,
+				53EC77CB3D39BF2791AA5643 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,7 +224,7 @@
 				E48C3EEA2D99784B00557E1A /* Sources */,
 				E48C3EEB2D99784B00557E1A /* Frameworks */,
 				E48C3EEC2D99784B00557E1A /* Resources */,
-				6BFC7A3BDD9768BC96A795B6 /* [CP] Copy Pods Resources */,
+				6D1C0D51FD22CFDFCEC58B4D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,23 +311,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1979A6D51AE5DE3F513D67C7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3F9321907091FE7B974BE71C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +331,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53EC77CB3D39BF2791AA5643 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		68A4A6FFC466B312D6DC205F /* [CP] Check Pods Manifest.lock */ = {
@@ -368,7 +372,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6BFC7A3BDD9768BC96A795B6 /* [CP] Copy Pods Resources */ = {
+		6D1C0D51FD22CFDFCEC58B4D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
