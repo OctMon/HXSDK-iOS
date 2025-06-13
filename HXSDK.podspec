@@ -22,6 +22,9 @@ Pod::Spec.new do |s|
     ss.dependency 'HXSDK/Core'
     ss.dependency 'PTGAdFramework', '~> 2.2.75'
   end
-
-  s.pod_target_xcconfig = { 'SWIFT_OBJC_INTERFACE_HEADER_NAME' => "$(SWIFT_MODULE_NAME).h", 'ENABLE_BITCODE' => 'NO', 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 arm64' }
+  
+  valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
+  s.xcconfig = {
+      'VALID_ARCHS' =>  valid_archs.join(' '),
+  }
 end
