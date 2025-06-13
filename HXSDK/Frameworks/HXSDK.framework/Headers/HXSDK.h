@@ -282,7 +282,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
-@import UbiXAdSDK;
+@import PTGAdSDK;
 #endif
 
 #endif
@@ -304,6 +304,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@protocol HXSplashAdDelegate;
+@class UIViewController;
+@class NSString;
+@class UIWindow;
+@class UIView;
+
+SWIFT_CLASS("_TtC5HXSDK12BaseSplashAd")
+@interface BaseSplashAd : NSObject
+/// 回调委托对象
+@property (nonatomic, strong) id <HXSplashAdDelegate> _Nullable delegate;
+@property (nonatomic, strong) UIViewController * _Nullable rootViewController;
+- (nonnull instancetype)initWithPlacementId:(NSString * _Nonnull)placementId OBJC_DESIGNATED_INITIALIZER;
+- (void)loadAd;
+- (void)showAdToWindow:(UIWindow * _Nonnull)window bottomView:(UIView * _Nullable)bottomView;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// 广告交互类型
 typedef SWIFT_ENUM(NSInteger, HXAdInteractionType, closed) {
   HXAdInteractionTypeUnknown = 0,
@@ -315,7 +333,6 @@ typedef SWIFT_ENUM(NSInteger, HXAdInteractionType, closed) {
   HXAdInteractionTypeFailedToOpen = 6,
 };
 
-@class NSString;
 
 SWIFT_CLASS("_TtC5HXSDK15HXPrivacyConfig")
 @interface HXPrivacyConfig : NSObject
@@ -355,13 +372,13 @@ SWIFT_PROTOCOL("_TtP5HXSDK18HXSplashAdDelegate_")
 /// 广告请求成功且素材加载完成，此时可调用 showAd 展示广告
 - (void)hxSplashAdDidLoad:(HXSplashAd * _Nonnull)splashAd;
 /// 广告请求失败
-- (void)hxSplashAdFailedToLoad:(HXSplashAd * _Nonnull)splashAd withError:(NSError * _Nonnull)error;
+- (void)hxSplashAdFailedToLoad:(HXSplashAd * _Nonnull)splashAd withError:(NSError * _Nullable)error;
 /// 广告即将展示
 - (void)hxSplashAdWillShow:(HXSplashAd * _Nonnull)splashAd;
 /// 广告展示完毕
 - (void)hxSplashAdDidShow:(HXSplashAd * _Nonnull)splashAd;
 /// 广告展示失败
-- (void)hxSplashAdFailedToShow:(HXSplashAd * _Nonnull)splashAd withError:(NSError * _Nonnull)error;
+- (void)hxSplashAdFailedToShow:(HXSplashAd * _Nonnull)splashAd withError:(NSError * _Nullable)error;
 /// 广告点击回调
 - (void)hxSplashAdDidClick:(HXSplashAd * _Nonnull)splashAd;
 /// 广告点击跳过
@@ -372,13 +389,10 @@ SWIFT_PROTOCOL("_TtP5HXSDK18HXSplashAdDelegate_")
 - (void)hxSplashAdDidFinishConversion:(HXSplashAd * _Nonnull)splashAd interactionType:(enum HXAdInteractionType)interactionType;
 @end
 
-@class UIViewController;
-@class UIWindow;
-@class UIView;
-@class UBiXSplashAd;
+@class PTGSplashAd;
 
 SWIFT_CLASS("_TtC5HXSDK10HXSplashAd")
-@interface HXSplashAd : NSObject <HXSplashAdDelegate, UBiXSplashAdDelegate>
+@interface HXSplashAd : BaseSplashAd <HXSplashAdDelegate, PTGSplashAdDelegate>
 /// 用于打开落地页，确保ta当前无presentedVC，否则将无法打开落地页
 @property (nonatomic, strong) UIViewController * _Nullable rootViewController;
 /// 当前广告是否有效，show前检查
@@ -386,26 +400,27 @@ SWIFT_CLASS("_TtC5HXSDK10HXSplashAd")
 /// 获取广告价格，单位(分)
 @property (nonatomic, readonly) NSInteger eCPM;
 @property (nonatomic, readonly, copy) NSString * _Nonnull placementId;
-/// 回调委托对象
-@property (nonatomic, strong) id <HXSplashAdDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithPlacementId:(NSString * _Nonnull)placementId OBJC_DESIGNATED_INITIALIZER;
-- (void)sendWinNotice:(NSInteger)secondPrice;
-- (void)sendLossNotice:(NSDictionary * _Nonnull)lossInfo;
 /// 加载广告
 - (void)loadAd;
 /// 展示广告
 - (void)showAdToWindow:(UIWindow * _Nonnull)window bottomView:(UIView * _Nullable)bottomView;
-- (void)ubixSplashAdDidLoad:(UBiXSplashAd * _Nonnull)splashAd;
-- (void)ubixSplashAdFailedToLoad:(UBiXSplashAd * _Nonnull)splashAd withError:(NSError * _Nonnull)error;
-- (void)ubixSplashAdWillShow:(UBiXSplashAd * _Nonnull)splashAd;
-- (void)ubixSplashAdDidShow:(UBiXSplashAd * _Nonnull)splashAd;
-- (void)ubixSplashAdFailedToShow:(UBiXSplashAd * _Nonnull)splashAd withError:(NSError * _Nonnull)error;
-- (void)ubixSplashAdDidClick:(UBiXSplashAd * _Nonnull)splashAd;
-- (void)ubixSplashAdDidClickSkip:(UBiXSplashAd * _Nonnull)splashAd;
-- (void)ubixSplashAdDidClose:(UBiXSplashAd * _Nonnull)splashAd;
-- (void)ubixSplashAdDidFinishConversion:(UBiXSplashAd * _Nonnull)splashAd interactionType:(UBiXAdInteractionType)interactionType;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// 开屏加载成功
+- (void)ptg_splashAdDidLoad:(PTGSplashAd * _Nonnull)splashAd;
+/// 开屏加载失败
+- (void)hxSplashAdFailedToLoad:(HXSplashAd * _Nonnull)splashAd withError:(NSError * _Nullable)error;
+/// 开屏广告展示失败
+- (void)ptg_splashAdVisibleError:(PTGSplashAd * _Nonnull)splashAd error:(NSError * _Nullable)error;
+/// 开屏广告将要展示
+- (void)ptg_splashAdWillVisible:(PTGSplashAd * _Nonnull)splashAd;
+/// 开屏加载失败
+- (void)ptg_splashAd:(PTGSplashAd * _Nonnull)splashAd didFailWithError:(NSError * _Nullable)error;
+/// 开屏广告被点击了
+- (void)ptg_splashAdDidClick:(PTGSplashAd * _Nonnull)splashAd;
+/// 开屏广告详情页关闭 落地页关闭
+- (void)ptg_splashAdDetailDidClose:(PTGSplashAd * _Nonnull)splashAd;
+/// 开屏广告关闭了
+- (void)ptg_splashAdDidClose:(PTGSplashAd * _Nonnull)splashAd;
 @end
 
 

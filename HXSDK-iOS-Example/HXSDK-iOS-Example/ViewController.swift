@@ -15,7 +15,7 @@ class ViewController: UIViewController, HXSplashAdDelegate {
     }
 
     @IBAction func sdkSplashAd() {
-        HXSDK.initWithAppId(appId: "12395")
+        HXSDK.initWithAppId(appId: "71004")
         
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization { status in
@@ -35,7 +35,7 @@ class ViewController: UIViewController, HXSplashAdDelegate {
     
     
     func loadAd() {
-        splashAd = HXSplashAd(placementId: "14073263")
+        splashAd = HXSplashAd(placementId: "11111231")
         splashAd?.rootViewController = (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController
         splashAd?.delegate = self
         splashAd?.loadAd()
@@ -70,7 +70,7 @@ class ViewController: UIViewController, HXSplashAdDelegate {
         }
     }
     
-    func hxSplashAdFailedToLoad(_ splashAd: HXSplashAd, withError error: any Error) {
+    func hxSplashAdFailedToLoad(_ splashAd: HXSplashAd, withError error: (any Error)?) {
         debugPrint("hxSplashAdFailedToLoad: \(error)")
     }
     
@@ -82,7 +82,7 @@ class ViewController: UIViewController, HXSplashAdDelegate {
         debugPrint("hxSplashAdDidShow")
     }
     
-    func hxSplashAdFailedToShow(_ splashAd: HXSplashAd, withError error: any Error) {
+    func hxSplashAdFailedToShow(_ splashAd: HXSplashAd, withError error: (any Error)?) {
         debugPrint("hxSplashAdFailedToShow: \(error)")
     }
     
