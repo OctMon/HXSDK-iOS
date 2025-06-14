@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HXSDK'
-  s.version          = '3.1.2'
+  s.version          = '3.1.3'
   s.summary          = 'HXSDK for iOS.'
 
   s.homepage         = 'https://github.com/OctMon/HXSDK-iOS'

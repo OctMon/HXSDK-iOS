@@ -6,6 +6,6 @@ framework module HXSDK {
 }
 
 module HXSDK.Swift {
-  header "HXSDK.h"
+  header "HXSDK-Swift.h"
   requires objc
 }
