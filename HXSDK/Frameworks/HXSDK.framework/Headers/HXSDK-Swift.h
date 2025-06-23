@@ -389,10 +389,9 @@ SWIFT_PROTOCOL("_TtP5HXSDK18HXSplashAdDelegate_")
 - (void)hxSplashAdDidFinishConversion:(HXSplashAd * _Nonnull)splashAd interactionType:(enum HXAdInteractionType)interactionType;
 @end
 
-@class PTGSplashAd;
 
 SWIFT_CLASS("_TtC5HXSDK10HXSplashAd")
-@interface HXSplashAd : BaseSplashAd <HXSplashAdDelegate, PTGSplashAdDelegate>
+@interface HXSplashAd : BaseSplashAd <HXSplashAdDelegate>
 /// 用于打开落地页，确保ta当前无presentedVC，否则将无法打开落地页
 @property (nonatomic, strong) UIViewController * _Nullable rootViewController;
 /// 当前广告是否有效，show前检查
@@ -405,10 +404,13 @@ SWIFT_CLASS("_TtC5HXSDK10HXSplashAd")
 - (void)loadAd;
 /// 展示广告
 - (void)showAdToWindow:(UIWindow * _Nonnull)window bottomView:(UIView * _Nullable)bottomView;
+@end
+
+@class PTGSplashAd;
+
+@interface HXSplashAd (SWIFT_EXTENSION(HXSDK)) <PTGSplashAdDelegate>
 /// 开屏加载成功
 - (void)ptg_splashAdDidLoad:(PTGSplashAd * _Nonnull)splashAd;
-/// 开屏加载失败
-- (void)hxSplashAdFailedToLoad:(HXSplashAd * _Nonnull)splashAd withError:(NSError * _Nullable)error;
 /// 开屏广告展示失败
 - (void)ptg_splashAdVisibleError:(PTGSplashAd * _Nonnull)splashAd error:(NSError * _Nullable)error;
 /// 开屏广告将要展示

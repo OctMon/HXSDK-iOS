@@ -64,6 +64,7 @@
 /// 开屏加载失败
 - (void)hxSplashAd:(HXSplashAd *)splashAd didFailWithError:(NSError *)error {
     NSLog(@"开屏广告%s",__func__);
+    [splashAd destroy];
 }
 
 /// 开屏广告被点击了
@@ -84,6 +85,7 @@
 ///  开屏广告展示失败
 - (void)hxSplashAdVisibleError:(HXSplashAd *)splashAd error:(NSError *)error {
     NSLog(@"开屏广告展示失败%s error = %@",__func__,error);
+    [splashAd destroy];
 }
 
 #pragma mark - UISceneSession lifecycle

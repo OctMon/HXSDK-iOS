@@ -72,6 +72,7 @@ class ViewController: UIViewController, HXSplashAdDelegate {
     
     func hxSplashAdFailedToLoad(_ splashAd: HXSplashAd, withError error: (any Error)?) {
         debugPrint("hxSplashAdFailedToLoad: \(error)")
+        splashAd.destroy()
     }
     
     func hxSplashAdWillShow(_ splashAd: HXSplashAd) {
@@ -84,6 +85,7 @@ class ViewController: UIViewController, HXSplashAdDelegate {
     
     func hxSplashAdFailedToShow(_ splashAd: HXSplashAd, withError error: (any Error)?) {
         debugPrint("hxSplashAdFailedToShow: \(error)")
+        splashAd.destroy()
     }
     
     func hxSplashAdDidClick(_ splashAd: HXSplashAd) {
