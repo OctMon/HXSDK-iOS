@@ -15,7 +15,7 @@ class ViewController: UIViewController, HXSplashAdDelegate {
     }
 
     @IBAction func sdkSplashAd() {
-        HXSDK.initWithAppId(appId: "71004")
+        HXSDK.setAppId("71004")
         
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization { status in
@@ -35,10 +35,10 @@ class ViewController: UIViewController, HXSplashAdDelegate {
     
     
     func loadAd() {
-        splashAd = HXSplashAd(placementId: "11111231")
+        splashAd = HXSplashAd(placementId: "15042297")
         splashAd?.rootViewController = (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController
         splashAd?.delegate = self
-        splashAd?.loadAd()
+        splashAd?.load()
     }
     
     // MARK: - Delegate Protocol
@@ -61,7 +61,7 @@ class ViewController: UIViewController, HXSplashAdDelegate {
         // 检查广告有效性
         if splashAd.isValid {
             if let keyWindow = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
-                splashAd.showAdToWindow(keyWindow, bottomView: bottomView)
+                splashAd.show(to: keyWindow, bottomView: bottomView)
             } else {
                 debugPrint("无法获取有效 keyWindow")
             }
@@ -70,7 +70,7 @@ class ViewController: UIViewController, HXSplashAdDelegate {
         }
     }
     
-    func hxSplashAdFailedToLoad(_ splashAd: HXSplashAd, withError error: (any Error)?) {
+    func hxSplashAdFailed(toLoad splashAd: HXSplashAd, withError error: (any Error)) {
         debugPrint("hxSplashAdFailedToLoad: \(error)")
         splashAd.destroy()
     }
@@ -83,7 +83,7 @@ class ViewController: UIViewController, HXSplashAdDelegate {
         debugPrint("hxSplashAdDidShow")
     }
     
-    func hxSplashAdFailedToShow(_ splashAd: HXSplashAd, withError error: (any Error)?) {
+    func hxSplashAdFailed(toShow splashAd: HXSplashAd, withError error: (any Error)) {
         debugPrint("hxSplashAdFailedToShow: \(error)")
         splashAd.destroy()
     }
@@ -92,8 +92,8 @@ class ViewController: UIViewController, HXSplashAdDelegate {
         debugPrint("hxSplashAdDidClick")
     }
     
-    func hxSplashAdDidFinishConversion(_ splashAd: HXSplashAd, interactionType: HXAdInteractionType) {
-        debugPrint("hxSplashAdDidFinishConversion: \(interactionType.description)")
+    func hxSplashAdDidFinishConversion(_ splashAd: HXSplashAd) {
+        debugPrint("hxSplashAdDidFinishConversion")
     }
     
     func hxSplashAdDidClickSkip(_ splashAd: HXSplashAd) {

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HXSDK'
-  s.version          = '3.1.4'
+  s.version          = '4.0.0'
   s.summary          = 'HXSDK for iOS.'
 
   s.homepage         = 'https://github.com/OctMon/HXSDK-iOS'
@@ -8,20 +8,11 @@ Pod::Spec.new do |s|
   s.author           = { 'octmon' => 'octmon@qq.com' }
   s.source           = { :git => 'https://github.com/OctMon/HXSDK-iOS.git', :tag => s.version.to_s }
 
-  s.swift_version = '5.0'
-  
   s.ios.deployment_target = '11.0'
   
-  s.default_subspec = ['Core']
-  
-  s.subspec 'Core' do |ss|
-    ss.ios.vendored_frameworks = 'HXSDK/Frameworks/HXSDK.framework'
-  end
-
-  s.subspec 'LY' do |ss|
-    ss.dependency 'HXSDK/Core'
-    ss.dependency 'PTGAdFramework', '~> 2.2.75'
-  end
+  s.vendored_frameworks = 'HXSDK.framework'
+  s.source_files = 'HXSDK.framework/Headers/*.h'
+  s.public_header_files = 'HXSDK.framework/Headers/*.h'
   
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = {

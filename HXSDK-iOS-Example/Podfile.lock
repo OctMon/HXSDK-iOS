@@ -1,25 +1,45 @@
 PODS:
-  - HXSDK/Core (3.1.4)
-  - HXSDK/LY (3.1.4):
-    - HXSDK/Core
-    - PTGAdFramework (~> 2.2.75)
-  - PTGAdFramework (2.2.75)
+  - CXHAdSDK-Adapter (1.8.9.1):
+    - CXHAdSDK-Kit (= 1.8.6)
+  - CXHAdSDK-Kit (1.8.6)
+  - CXHAdSDK/Channel (1.8.9.1):
+    - CXHAdSDK-Adapter (= 1.8.9.1)
+    - CXHAdSDK/Core
+    - WechatOpenSDK (= 2.0.4)
+  - CXHAdSDK/Core (1.8.9.1):
+    - CXHAdSDK-Adapter (= 1.8.9.1)
+  - CXHAdSDK/RC (1.8.9.1):
+    - CXHAdSDK-Adapter (= 1.8.9.1)
+    - CXHAdSDK/Core
+  - HXSDK (4.0.0):
+    - HXSDK/IconAd (= 4.0.0)
+  - HXSDK/IconAd (4.0.0):
+    - CXHAdSDK/Channel (~> 1.8.9.1)
+    - CXHAdSDK/RC (~> 1.8.9.1)
+  - WechatOpenSDK (2.0.4)
 
 DEPENDENCIES:
-  - HXSDK/LY (from `../`)
+  - HXSDK (from `../`)
+  - HXSDK/IconAd (from `../`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - PTGAdFramework
+    - CXHAdSDK
+    - CXHAdSDK-Adapter
+    - CXHAdSDK-Kit
+    - WechatOpenSDK
 
 EXTERNAL SOURCES:
   HXSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HXSDK: 53fa1c0860abf5bfac594664835570080c9de258
-  PTGAdFramework: dc5e40c372f2a736a382324620258e09a07bde74
+  CXHAdSDK: 0868ed629f5b42593c879594877c7145f4d5ba12
+  CXHAdSDK-Adapter: 73e5627c6b4c792d9150eb27aace323e47258efb
+  CXHAdSDK-Kit: 36a83708ed5a76905848bd544e9214cf95118633
+  HXSDK: 64f8cbc2dc9e6d4ec450015f364728f1ff779f17
+  WechatOpenSDK: 290989072e87b79d52225a01bb4e5e58f6f88593
 
-PODFILE CHECKSUM: f0fdae2779509df725485c8be2888c4929284f74
+PODFILE CHECKSUM: 05887873311fa6f71266e28c71f7c2283d150b05
 
 COCOAPODS: 1.16.2

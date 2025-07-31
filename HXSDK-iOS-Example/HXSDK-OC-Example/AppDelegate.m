@@ -1,10 +1,3 @@
-//
-//  AppDelegate.m
-//  HXSDK-OC-Example
-//
-//  Created by 李蒙 on 2025/6/13.
-//
-
 #import "AppDelegate.h"
 
 #import <HXSDK/HXSDK.h>
@@ -19,7 +12,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [HXSDK initWithAppIdWithAppId:@"71004"];
+    [HXSDK setAppId:@"71004"];
     [self.splashAd loadAd];
     return YES;
 }
@@ -37,7 +30,7 @@
 #pragma mark - HXSplashAdDelegate -
 
 /// 开屏加载成功
-- (void)hxSplashAdDidLoad:(HXSplashAd *)splashAd {
+- (void)hxSplashAdDidLoad:(nonnull HXSplashAd *)splashAd {
     NSLog(@"开屏广告%s",__func__);
     /// 广告是否有效（展示前请务必判断）
     /// 如不严格按照此方法对接，将导致因曝光延迟时间造成的双方消耗gap过大，请开发人员谨慎对接
@@ -61,31 +54,43 @@
     
 }
 
-/// 开屏加载失败
-- (void)hxSplashAd:(HXSplashAd *)splashAd didFailWithError:(NSError *)error {
-    NSLog(@"开屏广告%s",__func__);
-    [splashAd destroy];
-}
-
 /// 开屏广告被点击了
-- (void)hxSplashAdDidClick:(HXSplashAd *)splashAd {
+- (void)hxSplashAdDidClick:(nonnull HXSplashAd *)splashAd {
     NSLog(@"开屏广告%s",__func__);
 }
 
 /// 开屏广告关闭了
-- (void)hxSplashAdDidClose:(HXSplashAd *)splashAd {
+- (void)hxSplashAdDidClose:(nonnull HXSplashAd *)splashAd {
     NSLog(@"开屏广告%s",__func__);
 }
 
-///  开屏广告将要展示
-- (void)hxSplashAdWillVisible:(HXSplashAd *)splashAd {
+/// 开屏广告跳过了
+- (void)hxSplashAdDidClickSkip:(nonnull HXSplashAd *)splashAd {
     NSLog(@"开屏广告%s",__func__);
 }
 
-///  开屏广告展示失败
-- (void)hxSplashAdVisibleError:(HXSplashAd *)splashAd error:(NSError *)error {
+
+- (void)hxSplashAdDidFinishConversion:(nonnull HXSplashAd *)splashAd { 
+    NSLog(@"开屏广告%s",__func__);
+}
+
+- (void)hxSplashAdDidShow:(nonnull HXSplashAd *)splashAd { 
+    NSLog(@"开屏广告%s",__func__);
+}
+
+/// 开屏加载失败
+- (void)hxSplashAdFailedToLoad:(nonnull HXSplashAd *)splashAd withError:(nonnull NSError *)error {
+    NSLog(@"开屏广告%s",__func__);
+}
+
+/// 开屏广告展示失败
+- (void)hxSplashAdFailedToShow:(nonnull HXSplashAd *)splashAd withError:(nonnull NSError *)error {
     NSLog(@"开屏广告展示失败%s error = %@",__func__,error);
-    [splashAd destroy];
+}
+
+/// 开屏广告将要展示
+- (void)hxSplashAdWillShow:(nonnull HXSplashAd *)splashAd {
+    NSLog(@"开屏广告%s",__func__);
 }
 
 #pragma mark - UISceneSession lifecycle

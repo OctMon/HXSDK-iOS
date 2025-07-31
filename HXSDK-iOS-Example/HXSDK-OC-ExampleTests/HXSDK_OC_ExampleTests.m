@@ -1,10 +1,3 @@
-//
-//  HXSDK_OC_ExampleTests.m
-//  HXSDK-OC-ExampleTests
-//
-//  Created by 李蒙 on 2025/6/13.
-//
-
 #import <XCTest/XCTest.h>
 
 @interface HXSDK_OC_ExampleTests : XCTestCase
