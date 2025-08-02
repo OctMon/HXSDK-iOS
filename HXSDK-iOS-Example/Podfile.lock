@@ -1,15 +1,22 @@
 PODS:
-  - HXSDK (4.0.0)
+  - HXSDK (4.1.1):
+    - PTGAdFramework (~> 2.2.80)
+  - PTGAdFramework (2.2.80)
 
 DEPENDENCIES:
   - HXSDK (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - PTGAdFramework
 
 EXTERNAL SOURCES:
   HXSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HXSDK: b2202a891f9d43491470c989ee1fd620def79e3d
+  HXSDK: 9b180f47c14c0bc962297a374468177b8a8cc2a4
+  PTGAdFramework: bc4153b8e204a7f810a910d829735e54acbc040f
 
 PODFILE CHECKSUM: 7873d52d12394ec93ec909717358acf22ce2b2a4
 
