@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)sendWinNotice:(long)secondPrice;
 
-- (void)sendLossNotice:(NSDictionary *)secondPrice;
+- (void)sendLossNoticeDict:(NSDictionary *)secondPrice;
 
 - (NSInteger)eCPM;
 
