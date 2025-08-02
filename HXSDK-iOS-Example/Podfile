@@ -3,13 +3,18 @@ source 'https://github.com/CocoaPods/Specs.git'
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+def ad
+  pod 'HXSDK', :path => '../'
+  pod 'HXSDK/UBiX', :path => '../'
+  pod 'HXSDK/IconAd', :path => '../'
+end
+
 target 'HXSDK-iOS-Example' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  use_frameworks! :linkage => :static
 
   # Pods for HXSDK-iOS-Example
-  pod 'HXSDK', :path => '../'
-#  pod 'HXSDK/IconAd', :path => '../'
+  ad
 
   target 'HXSDK-iOS-ExampleTests' do
     inherit! :search_paths
@@ -25,6 +30,6 @@ end
 target 'HXSDK-OC-Example' do
   use_frameworks!
   
-  pod 'HXSDK', :path => '../'
-#  pod 'HXSDK/IconAd', :path => '../'
+  # Pods for HXSDK-OC-Example
+  ad
 end

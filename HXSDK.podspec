@@ -14,7 +14,24 @@ Pod::Spec.new do |s|
   s.source_files = 'HXSDK.framework/Headers/*.h'
   s.public_header_files = 'HXSDK.framework/Headers/*.h'
   
-  s.dependency 'PTGAdFramework', '~> 2.2.80'
+  s.default_subspecs = ['Core']
+  
+  s.subspec 'Core' do |ss|
+      s.dependency 'PTGAdFramework', '~> 2.2.80'
+  end
+  
+  s.subspec 'UBiX' do |ss|
+    ss.dependency 'UBiXMerakSDK', '~> 2.5.1'
+  end
+  
+  s.subspec 'IconAd' do |ss|
+    ss.dependency 'CXHAdSDK/Channel', '~> 1.8.9'
+    ss.dependency 'CXHAdSDK/RC', '~> 1.8.9'
+  end
+  
+  s.pod_target_xcconfig = {
+      'OTHER_LDFLAGS' => '$(inherited) -ObjC',
+  }
   
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = {
