@@ -1,14 +1,13 @@
 #import <Foundation/Foundation.h>
 
-#if __has_include(<CXHAdSDK-Core/CXHAdSDK.h>)
-#import <CXHAdSDK-Core/CXHAdSDK.h>
-#import <CXHAdSDK-Core/CXHAdSDKServiceAdView.h>
-
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol HXIconAdViewDelegate;
 
 @interface HXIconAdView : UIView
+{
+    NSString *_reqId;
+}
 
 /**
  广告生命周期代理
@@ -69,6 +68,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param price 赢价价格，单位分
  */
 - (void)sendLossNotice:(NSInteger)price;
+
+- (void)destroy;
 
 @end
 
@@ -135,5 +136,3 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-
-#endif
