@@ -6,7 +6,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 def ad
   pod 'HXSDK', :path => '../'
   pod 'HXSDK/UBiX', :path => '../'
-#  pod 'HXSDK/IconAd', :path => '../'
+  pod 'HXSDK/IconAd', :path => '../'
 end
 
 target 'HXSDK-iOS-Example' do
