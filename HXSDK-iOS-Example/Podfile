@@ -5,13 +5,13 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 def ad
   pod 'HXSDK', :path => '../'
-  pod 'HXSDK/UBiX', :path => '../'
-  pod 'HXSDK/IconAd', :path => '../'
+#  pod 'HXSDK/UBiX', :path => '../'
+#  pod 'HXSDK/IconAd', :path => '../'
 end
 
 target 'HXSDK-iOS-Example' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks! :linkage => :static
+  use_frameworks!
 
   # Pods for HXSDK-iOS-Example
   ad
