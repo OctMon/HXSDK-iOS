@@ -1,10 +1,6 @@
 #import <UIKit/UIKit.h>
 
-#if __has_include(<HXSDK/HXSplashAdDelegate.h>)
-#import <HXSDK/HXSplashAdDelegate.h>
-#else
-#import <HXSplashAdDelegate.h>
-#endif
+#import "HXSplashAdDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,7 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showAdToWindow:(UIWindow *)window;
 - (void)showAdToWindow:(UIWindow *)window bottomView:(nullable UIView *)bottomView;
 
+- (void)sendWinNotice:(long)secondPrice;
+
+- (void)sendLossNotice:(NSDictionary *)secondPrice;
+
 - (NSInteger)eCPM;
+
+- (NSString *)placementId;
 
 - (void)destroy;
 

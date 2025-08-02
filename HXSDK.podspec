@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HXSDK'
-  s.version          = '4.0.0'
+  s.version          = '4.1.0'
   s.summary          = 'HXSDK for iOS.'
 
   s.homepage         = 'https://github.com/OctMon/HXSDK-iOS'
@@ -13,6 +13,8 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'HXSDK.framework'
   s.source_files = 'HXSDK.framework/Headers/*.h'
   s.public_header_files = 'HXSDK.framework/Headers/*.h'
+  
+  s.dependency 'PTGAdFramework', '~> 2.2.79' # https://github.com/PTGAd/PTGAdFramework
   
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = {

@@ -261,7 +261,7 @@
 				E41EA4EA2DFC787800923562 /* Sources */,
 				E41EA4EB2DFC787800923562 /* Frameworks */,
 				E41EA4EC2DFC787800923562 /* Resources */,
-				EB753C5E46E93C24238DC794 /* [CP] Embed Pods Frameworks */,
+				1A3C69A342002FC693DC5B20 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,7 +325,7 @@
 				E48C3ECA2D99784A00557E1A /* Sources */,
 				E48C3ECB2D99784A00557E1A /* Frameworks */,
 				E48C3ECC2D99784A00557E1A /* Resources */,
-				1BB1950B4EDA5C2E164477B4 /* [CP] Embed Pods Frameworks */,
+				1B7DAFEAE0667BA623E9D3BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,7 +369,7 @@
 				E48C3EEA2D99784B00557E1A /* Sources */,
 				E48C3EEB2D99784B00557E1A /* Frameworks */,
 				E48C3EEC2D99784B00557E1A /* Resources */,
-				FE00327DEDE6F377EA076924 /* [CP] Embed Pods Frameworks */,
+				6BAE55E288D2A5D1393DDF38 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -491,21 +491,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1BB1950B4EDA5C2E164477B4 /* [CP] Embed Pods Frameworks */ = {
+		1A3C69A342002FC693DC5B20 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B7DAFEAE0667BA623E9D3BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example/Pods-HXSDK-iOS-Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3F9321907091FE7B974BE71C /* [CP] Check Pods Manifest.lock */ = {
@@ -552,6 +569,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6BAE55E288D2A5D1393DDF38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7C7FF4F1699CEBEA2EAC0B31 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -594,40 +628,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB753C5E46E93C24238DC794 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXSDK-OC-Example/Pods-HXSDK-OC-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE00327DEDE6F377EA076924 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests/Pods-HXSDK-iOS-Example-HXSDK-iOS-ExampleUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

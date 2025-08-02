@@ -1,6 +1,6 @@
 framework module HXSDK {
-  umbrella header "HXSDK.h"
-  export *
+  umbrella header "HXSDK-umbrella.h"
 
+  export *
   module * { export * }
 }
