@@ -15,16 +15,6 @@ target 'HXSDK-iOS-Example' do
 
   # Pods for HXSDK-iOS-Example
   ad
-
-  target 'HXSDK-iOS-ExampleTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'HXSDK-iOS-ExampleUITests' do
-    # Pods for testing
-  end
-
 end
 
 target 'HXSDK-OC-Example' do
@@ -32,4 +22,5 @@ target 'HXSDK-OC-Example' do
   
   # Pods for HXSDK-OC-Example
   ad
+  pod 'Bugly', '~> 2.6.1'
 end

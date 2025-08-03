@@ -1,4 +1,5 @@
 PODS:
+  - Bugly (2.6.1)
   - CXHAdSDK-Adapter (1.8.9.1):
     - CXHAdSDK-Kit (= 1.8.6)
   - CXHAdSDK-Kit (1.8.6)
@@ -32,12 +33,14 @@ PODS:
   - WechatOpenSDK (2.0.4)
 
 DEPENDENCIES:
+  - Bugly (~> 2.6.1)
   - HXSDK (from `../`)
   - HXSDK/IconAd (from `../`)
   - HXSDK/UBiX (from `../`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Bugly
     - CXHAdSDK
     - CXHAdSDK-Adapter
     - CXHAdSDK-Kit
@@ -51,6 +54,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  Bugly: 217ac2ce5f0f2626d43dbaa4f70764c953a26a31
   CXHAdSDK: 0868ed629f5b42593c879594877c7145f4d5ba12
   CXHAdSDK-Adapter: 73e5627c6b4c792d9150eb27aace323e47258efb
   CXHAdSDK-Kit: 36a83708ed5a76905848bd544e9214cf95118633
@@ -60,6 +64,6 @@ SPEC CHECKSUMS:
   UBiXMerakSDK: da7232992a1ec704559126c1dbd6d82af2e21f79
   WechatOpenSDK: 290989072e87b79d52225a01bb4e5e58f6f88593
 
-PODFILE CHECKSUM: 8364df7d9eb3575b3162a13e0cedad4f6932f3b9
+PODFILE CHECKSUM: fcea35564bbbdb58755cdc70f33375ff665a0d44
 
 COCOAPODS: 1.16.2

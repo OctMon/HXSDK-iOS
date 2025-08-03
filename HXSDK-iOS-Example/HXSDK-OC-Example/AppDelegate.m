@@ -2,6 +2,7 @@
 
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <HXSDK/HXSDK.h>
+#import <Bugly/Bugly.h>
 
 @interface AppDelegate ()<HXSplashAdDelegate>
 {
@@ -13,6 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Bugly startWithAppId:@"aa7fae8051"];
     [HXSDK setAppId:@"71004"];
     
     if (@available(iOS 14, *)) {
