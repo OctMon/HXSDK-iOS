@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HXSDK'
-  s.version          = '4.4.0'
+  s.version          = '4.4.1'
   s.summary          = 'HXSDK for iOS.'
 
   s.homepage         = 'https://github.com/OctMon/HXSDK-iOS'
@@ -21,10 +21,12 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'UBiX' do |ss|
+    ss.dependency 'HXSDK/Core'
     ss.dependency 'UBiXMerakSDK', '~> 2.5.1'
   end
   
   s.subspec 'IconAd' do |ss|
+    ss.dependency 'HXSDK/Core'
     ss.dependency 'CXHAdSDK/Channel', '~> 1.8.9'
     ss.dependency 'CXHAdSDK/RC', '~> 1.8.9'
   end
