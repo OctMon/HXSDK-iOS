@@ -147,7 +147,7 @@ SKAdNetwork（SKAN）是 Apple 的归因解决方案，可帮助广告客户在�
 
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [HXSDK initWithAppIdWithAppId:appId];
+    [HXSDK setAppId:appId];
     return YES;
 }
 
@@ -165,28 +165,34 @@ SKAdNetwork（SKAN）是 Apple 的归因解决方案，可帮助广告客户在�
 以下示例演示了如何在 AppDelegate 的 application:didFinishLaunchingWithOptions: 方法中创建并请求开屏广告。
 
 ```objective-c
-#import #import <HXSDK/HXSDK.h>
+#import <HXSDK/HXSDK.h>
 
-@interface AppDelegate () <HXSplashAdDelegate>
-@property (nonatomic, strong) HXSplashAd *splashAd;
+@interface AppDelegate ()<HXSplashAdDelegate>
+{
+    HXSplashAd *_splashAd;
+}
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [HXSDK setAppId:@"71004"];
-    [self.splashAd loadAd];
+    [HXSDK setAppId:appId];
+    [self loadAd];
     return YES;
 }
 
-#pragma mark - get -
-- (HXSplashAd *)splashAd {
-    if (!_splashAd) {
-        _splashAd = [[HXSplashAd alloc] initWithPlacementId:@"11111231"];
-        _splashAd.delegate = self;
-        _splashAd.rootViewController = [UIApplication sharedApplication].windows.firstObject.rootViewController;
+- (void)loadAd {
+    _splashAd = [[HXSplashAd alloc] initWithPlacementId:placementId];
+    UIWindow *window = [UIApplication sharedApplication].windows.firstObject;
+    for (UIWindow *w in [UIApplication sharedApplication].windows) {
+        if (w.isKeyWindow) {
+            window = w;
+            break;
+        }
     }
-    return _splashAd;
+    _splashAd.rootViewController = window.rootViewController;
+    _splashAd.delegate = self;
+    [_splashAd loadAd];
 }
 
 #pragma mark - HXSplashAdDelegate -
@@ -254,4 +260,117 @@ SKAdNetwork（SKAN）是 Apple 的归因解决方案，可帮助广告客户在�
 - (void)hxSplashAdWillShow:(nonnull HXSplashAd *)splashAd {
     NSLog(@"开屏广告%s",__func__);
 }
+
+@end
+```
+
+## ICON广告
+
+### ICON广告加载
+
+以下示例演示了如何在 ViewController 中创建并请求开屏广告。
+
+```
+#import "ViewController.h"
+#import <HXSDK/HXSDK.h>
+
+@interface ViewController() <HXIconAdViewDelegate>{
+    HXIconAdView *_serviceView;
+}
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self loadService];
+}
+
+- (void)loadService {
+    // 生成随机位置
+    CGSize adSize = CGSizeMake(50, 50);
+    CGRect randomFrame = CGRectMake(100, 20, adSize.width, adSize.height);
+
+    _serviceView = [[HXIconAdView alloc] initWithFrame:randomFrame];
+    
+    _serviceView.delegate = self;
+    _serviceView.controller = self;
+    _serviceView.posId = @"11111236";
+    _serviceView.showCloseView = YES;
+//    _serviceView.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:_serviceView];
+    [_serviceView loadAd];
+}
+
+#pragma mark - HXIconAdViewDelegate
+
+/**
+ 广告获取成功
+ 
+ @param serviceAdView banner实例
+ */
+- (void)hx_serviceAdViewDidReceived:(HXIconAdView *)serviceAdView{
+    NSLog(@"hx_serviceAdViewDidReceived");
+}
+
+/**
+ 广告拉取失败
+ 
+ @param serviceAdView banner实例
+ @param error 错误描述
+ */
+- (void)hx_serviceAdViewFailToReceived:(HXIconAdView *)serviceAdView error:(NSError *)error{
+    NSLog(@"hx_serviceAdViewFailToReceived: %@", error);
+}
+
+/**
+ 广告点击
+ 
+ @param serviceAdView 广告实例
+ @param loadingPageURL 广告落地页地址，当渠道为bwt，并且customLoadingPage为YES时有值
+ */
+- (void)hx_serviceAdViewClicked:(HXIconAdView *)serviceAdView loadingPageURL:(NSString *)loadingPageURL{
+    NSLog(@"hx_serviceAdViewClicked: %@", loadingPageURL);
+}
+
+/**
+ 广告关闭
+ 
+ @param serviceAdView 广告实例
+ */
+- (void)hx_serviceAdViewClose:(HXIconAdView *)serviceAdView{
+    NSLog(@"hx_serviceAdViewClose");
+}
+
+/**
+ 广告展示
+ 
+ @param serviceAdView 广告实例
+ */
+- (void)hx_serviceAdViewExposure:(HXIconAdView *)serviceAdView{
+    NSLog(@"hx_serviceAdViewExposure");
+}
+
+/**
+ 关闭落地页
+ 
+ @param serviceAdView 广告实例
+ */
+- (void)hx_serviceAdViewCloseLandingPage:(HXIconAdView *)serviceAdView{
+    NSLog(@"hx_serviceAdViewCloseLandingPage");
+}
+
+- (void)hx_serviceAdViewClickedReport:(nonnull HXIconAdView *)serviceAdView {
+    NSLog(@"hx_serviceAdViewClickedReport");
+}
+
+
+- (void)hx_serviceAdViewExposureReport:(nonnull HXIconAdView *)serviceAdView {
+    NSLog(@"hx_serviceAdViewExposureReport");
+}
+
+@end
+
 ```

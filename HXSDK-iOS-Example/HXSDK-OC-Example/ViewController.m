@@ -96,7 +96,6 @@
 
 #pragma mark - HXIconAdViewDelegate
 
-#if __has_include(<HXSDK/HXIconAdView.h>)
 /**
  广告获取成功
  
@@ -162,7 +161,5 @@
 - (void)hx_serviceAdViewExposureReport:(nonnull HXIconAdView *)serviceAdView {
     NSLog(@"hx_serviceAdViewExposureReport");
 }
-
-#endif
 
 @end
