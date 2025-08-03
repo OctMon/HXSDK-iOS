@@ -5,6 +5,7 @@
 @interface ViewController() <HXIconAdViewDelegate>{
     HXIconAdView *_serviceView;
 }
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (nonatomic, strong) NSArray<NSValue *>*excludedFrames;
 @end
 
@@ -77,6 +78,20 @@
     
     // 如果多次尝试后仍重叠，返回默认位置（屏幕右下角）
     return CGRectMake(screenWidth - size.width, screenHeight - size.height, size.width, size.height);
+}
+
+- (void)showLog:(NSString *)logStr {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSString *logS = self.textView.text;
+        NSString *log = nil;
+        if (![logS isEqualToString:@""]) {
+            log = [NSString stringWithFormat:@"%@\n%@", logS, logStr];
+        } else {
+            log = [NSString stringWithFormat:@"%@", logStr];
+        }
+        self.textView.text = log;
+        [self.textView scrollRangeToVisible:NSMakeRange(self.textView.text.length, 1)];
+    });
 }
 
 #pragma mark - HXIconAdViewDelegate

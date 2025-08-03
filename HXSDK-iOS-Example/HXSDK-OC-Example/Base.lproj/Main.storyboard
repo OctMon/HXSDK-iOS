@@ -18,26 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VS3-to-f0I">
-                                <rect key="frame" x="131.33333333333337" y="59" width="130.66666666666663" height="113"/>
+                                <rect key="frame" x="144.66666666666666" y="59" width="103.66666666666666" height="113"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVh-ra-mBV">
-                                        <rect key="frame" x="0.0" y="0.0" width="130.66666666666666" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="开屏广告UbiX"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="开屏广告1"/>
                                         <connections>
                                             <action selector="ubiXShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aW2-eO-ZLE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqs-6F-gex">
-                                        <rect key="frame" x="0.0" y="39.333333333333329" width="130.66666666666666" height="34.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="39.333333333333329" width="103.66666666666667" height="34.333333333333329"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="开屏广告PTG"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="开屏广告2"/>
                                         <connections>
                                             <action selector="ptgShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8U-FO-FfM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUF-Zw-led">
-                                        <rect key="frame" x="0.0" y="78.666666666666657" width="130.66666666666666" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="78.666666666666657" width="103.66666666666667" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Icon广告"/>
                                         <connections>
@@ -46,14 +46,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="izu-DG-JT1">
+                                <rect key="frame" x="0.0" y="518" width="393" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="bWE-io-DYi"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fjm-vX-kkX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VS3-to-f0I" firstAttribute="centerX" secondItem="1IX-3t-8RV" secondAttribute="centerX" id="09r-6H-BAV"/>
+                            <constraint firstItem="izu-DG-JT1" firstAttribute="leading" secondItem="fjm-vX-kkX" secondAttribute="leading" id="6I1-46-90f"/>
                             <constraint firstItem="VS3-to-f0I" firstAttribute="top" secondItem="fjm-vX-kkX" secondAttribute="top" id="HRO-jM-A0H"/>
+                            <constraint firstItem="izu-DG-JT1" firstAttribute="trailing" secondItem="fjm-vX-kkX" secondAttribute="trailing" id="h2E-sP-oA6"/>
+                            <constraint firstItem="fjm-vX-kkX" firstAttribute="bottom" secondItem="izu-DG-JT1" secondAttribute="bottom" id="hRS-Lw-Gab"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="izu-DG-JT1" id="yQD-aH-Swl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,6 +77,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
