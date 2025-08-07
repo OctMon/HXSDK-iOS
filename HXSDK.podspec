@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HXSDK'
-  s.version          = '4.4.1'
+  s.version          = '4.4.6'
   s.summary          = 'HXSDK for iOS.'
 
   s.homepage         = 'https://github.com/OctMon/HXSDK-iOS'
@@ -27,8 +27,8 @@ Pod::Spec.new do |s|
   
   s.subspec 'IconAd' do |ss|
     ss.dependency 'HXSDK/Core'
-    ss.dependency 'CXHAdSDK/Channel', '~> 1.8.9'
-    ss.dependency 'CXHAdSDK/RC', '~> 1.8.9'
+    ss.dependency 'CXHAdSDK/Channel', '~> 1.9.1'
+    ss.dependency 'CXHAdSDK/RC', '~> 1.9.1'
   end
   
   s.pod_target_xcconfig = {
